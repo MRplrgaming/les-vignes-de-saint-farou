@@ -262,6 +262,17 @@ nav.scrolled {
   color: var(--ivory);
 }
 
+.nav-call {
+  background: transparent !important;
+  color: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+}
+
+.nav-call:hover {
+  background: var(--gold) !important;
+  color: var(--charcoal) !important;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -415,6 +426,9 @@ nav.scrolled {
   border-color: var(--gold);
   color: var(--gold);
 }
+
+.btn-call i { margin-right: 6px; }
+.btn-call:hover i { color: var(--gold); }
 
 .hero-scroll-down {
   position: absolute;
