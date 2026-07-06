@@ -504,9 +504,7 @@
 
       <div class="contact-form reveal">
         <h3>Reserver en <em>ligne</em></h3>
-        <form action="https://formspree.io/f/xaqgvgzp" method="POST">
-          <input type="text" name="_gotcha" style="display:none">
-          <input type="hidden" name="_next" value="https://mrplrgaming.github.io/les-vignes-de-saint-farou/">
+        <form id="reservationForm">
           <div class="form-row">
             <input type="text" name="nom" placeholder="Votre nom" required>
             <input type="email" name="email" placeholder="Votre email" required>
@@ -517,7 +515,8 @@
             <input type="number" name="convives" placeholder="Convives" min="1" max="20" required>
           </div>
           <textarea name="message" placeholder="Message ou demande particuliere..." rows="4"></textarea>
-          <button type="submit" class="btn-primary">Envoyer la demande</button>
+          <button type="submit" class="btn-primary" id="formSubmit">Envoyer la demande</button>
+          <div id="formSuccess" class="form-success">✓ Demande envoyee ! Nous vous repondrons dans les plus brefs delais.</div>
         </form>
       </div>
     </div>

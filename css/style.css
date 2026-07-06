@@ -1101,6 +1101,24 @@ nav.scrolled {
   font-family: inherit;
 }
 
+.form-success {
+  display: none;
+  margin-top: 16px;
+  padding: 16px 20px;
+  background: #eaf7e6;
+  border-left: 4px solid #4caf50;
+  font-size: 0.85rem;
+  color: #2e7d32;
+  animation: fadeInUp 0.5s ease;
+}
+
+.form-success.show { display: block; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 /* Footer */
 #footer {
   padding: 56px 0;

@@ -247,3 +247,34 @@ function animateStars(from, to, duration) {
     console.warn('Cookie init error:', err);
   }
 })();
+
+/* Formulaire reservation */
+(function() {
+  var form = document.getElementById('reservationForm');
+  var success = document.getElementById('formSuccess');
+  var submitBtn = document.getElementById('formSubmit');
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Envoi en cours...';
+
+    var data = new FormData(form);
+    data.append('_gotcha', '');
+
+    fetch('https://formspree.io/f/xaqgvgzp', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function() {
+      form.reset();
+      submitBtn.style.display = 'none';
+      success.classList.add('show');
+    }).catch(function() {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Envoyer la demande';
+      alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+    });
+  });
+})();
