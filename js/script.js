@@ -289,3 +289,19 @@ function animateStars(from, to, duration) {
     });
   });
 })();
+
+/* Contact tabs */
+(function() {
+  var tabs = document.querySelectorAll('.ctab');
+  var panels = document.querySelectorAll('.contact-panel');
+  if (!tabs.length) return;
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      panels.forEach(function(p) { p.classList.remove('active'); });
+      var target = document.getElementById('cpanel-' + tab.dataset.ctab);
+      if (target) target.classList.add('active');
+    });
+  });
+})();

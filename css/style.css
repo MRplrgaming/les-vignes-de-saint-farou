@@ -963,19 +963,53 @@ nav.scrolled {
 #contact { padding: 120px 0; }
 
 .contact-head { text-align: center; }
-.contact-head h2 { margin-bottom: 56px; }
+.contact-head h2 { margin-bottom: 32px; }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: stretch;
+/* Contact tabs */
+.contact-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
+
+.ctab {
+  padding: 12px 28px;
+  background: transparent;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: var(--transition);
+  border-bottom: 1px solid transparent;
+}
+
+.ctab:hover { color: var(--charcoal); }
+
+.ctab.active {
+  color: var(--charcoal);
+  border-bottom-color: var(--gold);
+}
+
+.contact-panel {
+  display: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-panel.active { display: block; }
 
 .contact-cards {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 .contact-item {
@@ -1524,8 +1558,7 @@ nav.scrolled {
 
 /* Responsive */
 @media (max-width: 968px) {
-  .about-grid,
-  .contact-grid {
+  .about-grid {
     grid-template-columns: 1fr;
     gap: 48px;
   }
@@ -1594,6 +1627,9 @@ nav.scrolled {
 
   .menu-meta h4 { font-size: 1rem; }
   .price { font-size: 1rem; }
+
+  .ctab { font-size: 0.7rem; padding: 10px 16px; }
+  .contact-map { min-height: 280px; }
 
   .cookie-notice-inner { flex-direction: column; gap: 12px; padding: 16px 20px; }
   .cookie-notice p { font-size: 0.8rem; }

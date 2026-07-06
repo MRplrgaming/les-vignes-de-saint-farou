@@ -454,34 +454,40 @@
         <span class="label">Contact</span>
         <h2>Reservez votre <em>table</em></h2>
       </div>
-      <div class="contact-grid">
-      <div class="contact-cards stagger">
-        <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <small>Adresse</small>
-              <p>12 Place Général de Gaulle<br>06530 Saint-Cézaire-sur-Siagne</p>
+
+      <div class="contact-tabs">
+        <button class="ctab active" data-ctab="enligne">En ligne</button>
+        <button class="ctab" data-ctab="contact">Nous contacter</button>
+        <button class="ctab" data-ctab="horaires">Horaires & acces</button>
+      </div>
+
+      <div class="contact-panel active" id="cpanel-enligne">
+        <div class="contact-form">
+          <form id="reservationForm">
+            <input type="text" name="_gotcha" style="display:none">
+            <div class="form-row">
+              <input type="text" name="nom" placeholder="Votre nom" required>
+              <input type="email" name="email" placeholder="Votre email" required>
             </div>
-          </div>
+            <div class="form-row">
+              <input type="date" name="date" required>
+              <input type="time" name="heure" required>
+              <input type="number" name="convives" placeholder="Convives" min="1" max="20" required>
+            </div>
+            <textarea name="message" placeholder="Message ou demande particuliere..." rows="4"></textarea>
+            <button type="submit" class="btn-primary" id="formSubmit">Envoyer la demande</button>
+            <div id="formSuccess" class="form-success">Demande envoyee ! Nous vous repondrons dans les plus brefs delais.</div>
+          </form>
+        </div>
+      </div>
+
+      <div class="contact-panel" id="cpanel-contact">
+        <div class="contact-cards stagger">
           <div class="contact-item">
             <i class="fas fa-phone-alt"></i>
             <div>
               <small>Telephone</small>
               <a href="tel:+33493608703">04 93 60 87 03</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-clock"></i>
-            <div>
-              <small>Horaires</small>
-              <p>Midi : 12h00 – 14h30 (sauf lun & dim)<br>Soir : ven & sam 19h00 – 22h30</p>
-            </div>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-credit-card"></i>
-            <div>
-              <small>Paiements</small>
-              <p>Carte bancaire, Cheques, Ticket Restaurant</p>
             </div>
           </div>
           <div class="contact-item">
@@ -499,28 +505,35 @@
             </div>
           </div>
         </div>
-        <div class="contact-map reveal reveal-right">
-          <iframe src="https://maps.google.com/maps?q=12+Place+G%C3%A9n%C3%A9ral+de+Gaulle,+06530+Saint-C%C3%A9zaire-sur-Siagne&t=m&z=16&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Carte Saint-Cézaire-sur-Siagne"></iframe>
-        </div>
       </div>
 
-      <div class="contact-form reveal">
-        <h3>Reserver en <em>ligne</em></h3>
-        <form id="reservationForm">
-          <input type="text" name="_gotcha" style="display:none">
-          <div class="form-row">
-            <input type="text" name="nom" placeholder="Votre nom" required>
-            <input type="email" name="email" placeholder="Votre email" required>
+      <div class="contact-panel" id="cpanel-horaires">
+        <div class="contact-cards stagger">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <small>Adresse</small>
+              <p>12 Place General de Gaulle<br>06530 Saint-Cezaire-sur-Siagne</p>
+            </div>
           </div>
-          <div class="form-row">
-            <input type="date" name="date" required>
-            <input type="time" name="heure" required>
-            <input type="number" name="convives" placeholder="Convives" min="1" max="20" required>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <small>Horaires</small>
+              <p>Midi : 12h00 – 14h30 (sauf lun & dim)<br>Soir : ven & sam 19h00 – 22h30</p>
+            </div>
           </div>
-          <textarea name="message" placeholder="Message ou demande particuliere..." rows="4"></textarea>
-          <button type="submit" class="btn-primary" id="formSubmit">Envoyer la demande</button>
-          <div id="formSuccess" class="form-success">✓ Demande envoyee ! Nous vous repondrons dans les plus brefs delais.</div>
-        </form>
+          <div class="contact-item">
+            <i class="fas fa-credit-card"></i>
+            <div>
+              <small>Paiements</small>
+              <p>Carte bancaire, Cheques, Ticket Restaurant</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map reveal reveal-right">
+          <iframe src="https://maps.google.com/maps?q=12+Place+G%C3%A9n%C3%A9ral+de+Gaulle,+06530+Saint-C%C3%A9zaire-sur-Siagne&t=m&z=16&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Carte Saint-Cezaire-sur-Siagne"></iframe>
+        </div>
       </div>
     </div>
   </section>
