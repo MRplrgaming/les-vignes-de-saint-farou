@@ -416,37 +416,44 @@ nav.scrolled {
   color: var(--gold);
 }
 
-.hero-scroll {
+.hero-scroll-down {
   position: absolute;
-  bottom: 24px;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.2);
+  animation: arrowBounce 2s ease-in-out infinite;
+  line-height: 1;
+}
+
+@keyframes arrowBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.2; }
+  50% { transform: translateX(-50%) translateY(4px); opacity: 0.5; }
+}
+
+.scroll-hint {
+  text-align: center;
+  padding: 24px 0 0;
   font-size: 0.6rem;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
+  color: var(--text-light);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
-  animation: pulseDown 3s ease-in-out infinite;
 }
 
-.scroll-arrow {
-  font-size: 0.8rem;
-  line-height: 1;
-  color: rgba(255,255,255,0.2);
-  animation: arrowBounce 2s ease-in-out infinite;
+.scroll-hint span {
+  font-size: 0.9rem;
+  color: var(--gold-dim);
+  animation: hintArrow 1.8s ease-in-out infinite;
 }
 
-@keyframes pulseDown {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 0.7; }
-}
-
-@keyframes arrowBounce {
-  0%, 100% { transform: translateY(0); opacity: 0.2; }
-  50% { transform: translateY(4px); opacity: 0.6; }
+@keyframes hintArrow {
+  0%, 100% { transform: translateY(0); opacity: 0.4; }
+  50% { transform: translateY(4px); opacity: 0.8; }
 }
 
 /* About */
