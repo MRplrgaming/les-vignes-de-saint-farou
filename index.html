@@ -3,12 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Les Vignes de Saint Farou</title>
-  <meta name="description" content="Restaurant bistronomique à Saint-Cézaire-sur-Siagne. Cuisine provençale, produits frais, terrasse ombragée.">
+  <title>Les Vignes de Saint Farou — Restaurant Bistronomique à Saint-Cézaire-sur-Siagne</title>
+  <meta name="description" content="Restaurant bistronomique à Saint-Cézaire-sur-Siagne. Cuisine provençale, produits frais du marché, terrasse ombragée. Menu du jour, plats faits maison, desserts gourmands.">
+  <meta name="keywords" content="restaurant Saint-Cézaire, cuisine provençale, bistronomique, Nicolas, terrasse, marché, Alpes-Maritimes">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Les Vignes de Saint Farou — Restaurant Bistronomique">
+  <meta property="og:description" content="Cuisine provençale, produits frais du marché, terrasse ombragée à Saint-Cézaire-sur-Siagne.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:url" content="https://mrplrgaming.github.io/les-vignes-de-saint-farou/">
+  <meta property="og:image" content="https://mrplrgaming.github.io/les-vignes-de-saint-farou/images/photo10.jpg">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Les Vignes de Saint Farou — Restaurant Bistronomique">
+  <meta name="twitter:description" content="Cuisine provençale, produits frais du marché, terrasse ombragée à Saint-Cézaire-sur-Siagne.">
+  <meta name="twitter:image" content="https://mrplrgaming.github.io/les-vignes-de-saint-farou/images/photo10.jpg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Les Vignes de Saint Farou",
+    "alternateName": "Les Vignes de San Fariou",
+    "description": "Restaurant bistronomique proposant une cuisine provençale élaborée à partir de produits frais du marché.",
+    "url": "https://mrplrgaming.github.io/les-vignes-de-saint-farou/",
+    "telephone": "+33493608703",
+    "email": "restaurant@vignes-san-fariou.fr",
+    "servesCuisine": "Provençale, Bistronomique",
+    "priceRange": "€€",
+    "image": "https://mrplrgaming.github.io/les-vignes-de-saint-farou/images/photo10.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 Place Général de Gaulle",
+      "addressLocality": "Saint-Cézaire-sur-Siagne",
+      "postalCode": "06530",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.64976,
+      "longitude": 6.79287
+    },
+    "openingHours": [
+      "Tu-Th 12:00-14:30",
+      "Fr-Sa 12:00-14:00, 19:00-22:30"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.4",
+      "reviewCount": "182",
+      "bestRating": "5"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -445,6 +500,24 @@
         <div class="contact-map reveal reveal-right">
           <iframe src="https://maps.google.com/maps?q=12+Place+G%C3%A9n%C3%A9ral+de+Gaulle,+06530+Saint-C%C3%A9zaire-sur-Siagne&t=m&z=16&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Carte Saint-Cézaire-sur-Siagne"></iframe>
         </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <h3>Reserver en <em>ligne</em></h3>
+        <form action="https://formspree.io/f/xaqgvgzp" method="POST">
+          <input type="text" name="_gotcha" style="display:none">
+          <div class="form-row">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+          </div>
+          <div class="form-row">
+            <input type="date" name="date" required>
+            <input type="time" name="heure" required>
+            <input type="number" name="convives" placeholder="Convives" min="1" max="20" required>
+          </div>
+          <textarea name="message" placeholder="Message ou demande particuliere..." rows="4"></textarea>
+          <button type="submit" class="btn-primary">Envoyer la demande</button>
+        </form>
       </div>
     </div>
   </section>
