@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Vignes de Saint Farou</title>
+  <meta name="description" content="Restaurant bistronomique à Saint-Cézaire-sur-Siagne. Cuisine provençale, produits frais, terrasse ombragée.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">Les Vignes <span>de Saint Farou</span></a>
+      <div class="nav-right">
+        <a href="#about" class="nav-link">L'Esprit</a>
+        <a href="#menu" class="nav-link">Carte</a>
+        <a href="#gallery" class="nav-link">Galerie</a>
+        <a href="#reviews" class="nav-link">Avis</a>
+        <a href="https://www.facebook.com/VignesSanFariou" target="_blank" class="nav-link nav-social" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#contact" class="nav-btn">Reservez</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-holder">
+      <div class="hero-marquee">
+        <div class="hero-line"></div>
+        <span>Bistrot & Cuisine Provençale</span>
+        <div class="hero-line"></div>
+      </div>
+      <h1>Les Vignes<br><em>de Saint Farou</em></h1>
+      <p class="hero-addr">12 Place Général de Gaulle — Saint-Cézaire-sur-Siagne</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">Decouvrir</a>
+        <a href="#contact" class="btn-ghost">Contact</a>
+      </div>
+      <div class="hero-scroll">Poursuivre</div>
+    </div>
+  </section>
+
+  <section id="about" class="reveal-left">
+    <div class="container">
+      <div class="about-grid stagger">
+        <div class="about-visual reveal-left">
+          <div class="collage">
+            <div class="collage-item collage-a"><img src="images/photo25.jpg" alt="" class="parallax-img"></div>
+            <div class="collage-item collage-b"><img src="images/photo26.jpg" alt="" class="parallax-img"></div>
+            <div class="collage-item collage-c"><img src="images/photo27.jpg" alt="" class="parallax-img"></div>
+            <div class="collage-item collage-d"><img src="images/photo28.jpg" alt="" class="parallax-img"></div>
+          </div>
+          <div class="about-stamp">
+            <i class="fas fa-seedling"></i>
+            <span>Produits du marche</span>
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <span class="label">L'Esprit</span>
+          <h2>Une cuisine de <em>marche</em></h2>
+          <p>
+            Installé place Général de Gaulle, notre restaurant vous accueille dans un cadre authentique et décontracté. Le chef <strong>Nicolas</strong> élabore une cuisine généreuse à partir de produits bruts, sourcés chaque jour sur le marché.
+          </p>
+          <p>
+            Tartares, woks, burgers aux frites maison, pizzas — chaque plat raconte une histoire de saveurs méditerranéennes.
+          </p>
+          <div class="about-sign">
+            <i class="fas fa-utensils"></i>
+            <span>Chef Nicolas</span>
+          </div>
+        </div>
+      </div>
+      <div class="chef-section stagger">
+        <div class="chef-image reveal-left">
+            <img src="images/photo22.jpg" alt="Plat signé Chef Nicolas" class="parallax-img">
+        </div>
+        <div class="chef-text reveal-right">
+          <span class="label">La Passion du Chef</span>
+          <h3>Une signature <em>gourmande</em></h3>
+          <p>
+            Chaque assiette qui sort de la cuisine du Chef Nicolas raconte une histoire. Celle d'un produit choisi sur le marché, d'une cuisson maîtrisée, d'une touche personnelle qui fait la différence. Du wok de porc aux légumes croquants au burger du San Fariou accompagné de frites maison, chaque plat est préparé avec la même exigence : celle du gout avant tout.
+          </p>
+          <p>
+            "Je veux que mes clients retrouvent le goût des choses simples, mais exécutées avec précision. Un bon produit, bien cuit, bien assaisonné — ça n'a pas de prix."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="reveal-scale">
+    <div class="container">
+<div class="menu-head reveal">
+      <span class="label">La Carte</span>
+      <h2>Saveurs & <em>saisons</em></h2>
+      </div>
+      <div class="menu-tabs">
+        <button class="tab active" data-tab="formules">Formules</button>
+        <button class="tab" data-tab="plats">Plats</button>
+        <button class="tab" data-tab="suggestions">Suggestions</button>
+        <button class="tab" data-tab="desserts">Desserts</button>
+        <button class="tab" data-tab="boissons">Boissons</button>
+      </div>
+      <div class="menu-panel active" id="panel-formules">
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Plat du jour</h4>
+            <span class="price">12.50</span>
+          </div>
+          <p>Selon le marché et l'inspiration du Chef Nicolas</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Menu du jour</h4>
+            <span class="price">16.50</span>
+          </div>
+          <p>Entrée + Plat ou Plat + Dessert</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>La Formule</h4>
+            <span class="price">19.40</span>
+          </div>
+          <p>Plat + Dessert ou Café gourmand</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Menu Dégustation</h4>
+            <span class="price">34</span>
+          </div>
+          <p>Entrée + Plat + Dessert — Un voyage de saveurs</p>
+        </div>
+      </div>
+      <div class="menu-panel" id="panel-plats">
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Burger du San Fariou</h4>
+            <span class="price">15</span>
+          </div>
+          <p>Frites maison</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Filet de bœuf — Faux-filet</h4>
+            <span class="price">24</span>
+          </div>
+          <p>Accompagnement du moment</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Canard au miel et soja</h4>
+            <span class="price">20</span>
+          </div>
+          <p>Purée de carottes maison</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Wok de porc</h4>
+            <span class="price">19</span>
+          </div>
+          <p>Légumes croquants, sauce soja</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Panisse provençale</h4>
+            <span class="price">13</span>
+          </div>
+          <p>Spécialité niçoise</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Farcis végétaliens</h4>
+            <span class="price">14</span>
+          </div>
+          <p>Légumes farcis de saison</p>
+        </div>
+      </div>
+      <div class="menu-panel stagger" id="panel-suggestions">
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Carpaccio de truffes</h4>
+            <span class="price">15</span>
+          </div>
+          <p>Fines tranches, huile d'olive, parmesan</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Gratin de légumes</h4>
+            <span class="price">14</span>
+          </div>
+          <p>Légumes de saison gratinés au four</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Viande avec sauce</h4>
+            <span class="price">18</span>
+          </div>
+          <p>Suggestion du chef selon arrivage</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Fromages affinés</h4>
+            <span class="price">11</span>
+          </div>
+          <p>Sélection du terroir, confit de figues</p>
+        </div>
+      </div>
+      <div class="menu-panel" id="panel-desserts">
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Crème brûlée à la violette</h4>
+            <span class="price">9</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Baba au limoncello</h4>
+            <span class="price">10</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Panna cotta du moment</h4>
+            <span class="price">9</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Café gourmand</h4>
+            <span class="price">19</span>
+          </div>
+          <p>Café + sélection de mini-desserts</p>
+        </div>
+      </div>
+      <div class="menu-panel" id="panel-boissons">
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Vin rouge — Côtes de Provence</h4>
+            <span class="price">5 / 24</span>
+          </div>
+          <p>Verre / Bouteille</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Vin rosé — Côtes de Provence</h4>
+            <span class="price">5 / 22</span>
+          </div>
+          <p>Verre / Bouteille</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Vin blanc — Bellet AOC</h4>
+            <span class="price">7 / 32</span>
+          </div>
+          <p>Verre / Bouteille</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Bières pression & bouteille</h4>
+            <span class="price">5–8</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Spritz & Cocktails</h4>
+            <span class="price">8–12</span>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-meta">
+            <h4>Café / Expresso</h4>
+            <span class="price">2</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-note">
+        <i class="fas fa-leaf"></i>
+        <span>Carte renouvelée au rythme des saisons — Consultez l'ardoise du jour</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="reveal-gallery">
+    <div class="container">
+      <div class="gallery-head">
+        <span class="label light">Ambiance</span>
+        <h2>Notre <em>univers</em></h2>
+      </div>
+    </div>
+    <div class="gallery-wrap">
+      <div class="gallery-track" id="galleryTrack">
+        <div class="gallery-slide"><img src="images/photo10.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo11.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo12.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo13.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo14.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo16.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo18.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo19.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo22.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo2.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo5.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo6.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo7.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo29.jpg" alt=""></div>
+        <div class="gallery-slide"><img src="images/photo30.jpg" alt=""></div>
+      </div>
+      <button class="gallery-btn prev" id="galleryPrev"><i class="fas fa-arrow-left"></i></button>
+      <button class="gallery-btn next" id="galleryNext"><i class="fas fa-arrow-right"></i></button>
+      <div class="gallery-dots" id="galleryDots"></div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="container">
+      <div class="reviews-head">
+        <span class="label light">Ils nous adorent</span>
+        <h2>Ce que disent <em>nos clients</em></h2>
+      </div>
+      <div class="reviews-grid stagger">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Très bon accueil malgré notre arrivée tardive. J'ai mangé un tartare excellent et ma fille s'est régalée avec son Burger. Belle terrasse ombragée. À recommander."</p>
+          <div class="review-author">
+            <strong>Mathieu</strong>
+            <span>— Fév. 2026</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"De passage en vacances à Saint-Cézaire, nous avons réservé une table pour 7 personnes. Nous nous sommes tous régalés de l'apéritif aux desserts. Service souriant et professionnel."</p>
+          <div class="review-author">
+            <strong>Charlotte</strong>
+            <span>— Fév. 2026</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Excellent ! Le plat du jour change tous les jours comme indiqué. C'est excellent ainsi que le café gourmand. Prix plus que raisonnable le midi. On y retournera volontiers !"</p>
+          <div class="review-author">
+            <strong>Julie</strong>
+            <span>— Jan. 2026</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Nous nous sommes régalés avec les différents plats de ce restaurant. Les produits sont frais, la cuisine est délicieuse. Un sans-faute, nous reviendrons c'est certain."</p>
+          <div class="review-author">
+            <strong>Jonathan</strong>
+            <span>— Jan. 2026</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Excellent restaurant ! Le chef Nicolas maîtrise parfaitement ses cuissons. Le filet de bœuf était incroyable. Service aux petits soins. Je recommande les yeux fermés."</p>
+          <div class="review-author">
+            <strong>Sophie</strong>
+            <span>— Mars 2026</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>"Nous venons régulièrement depuis des années et la qualité est toujours au rendez-vous. Mention spéciale pour le wok de porc et les frites maison. Un incontournable de Saint-Cézaire !"</p>
+          <div class="review-author">
+            <strong>Philippe</strong>
+            <span>— Mars 2026</span>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-avg">
+        <span class="big"><span id="ratingNum">0</span></span>
+        <div class="stars-wrap">
+          <div class="stars-empty">★★★★★</div>
+          <div class="stars-fill" id="starsFill" style="width:0%">★★★★★</div>
+        </div>
+        <span>182 avis sur Google</span>
+      </div>
+      <div class="reviews-more">
+        <a href="https://www.google.com/maps/place/Les+Vignes+de+San+Fariou/@43.6497656,6.7928737,17z/data=!4m8!3m7!1s0x12cc21759bc28ef1:0x9fd8c637d2d4d8bc!8m2!3d43.6497656!4d6.7928737!9m1!1b1!16s%2Fg%2F1tcwbl14?entry=ttu" target="_blank" rel="noopener">Plus d'avis sur Google Maps →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <div class="container">
+      <div class="contact-head">
+        <span class="label">Contact</span>
+        <h2>Reservez votre <em>table</em></h2>
+      </div>
+      <div class="contact-grid">
+      <div class="contact-cards stagger">
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <small>Adresse</small>
+              <p>12 Place Général de Gaulle<br>06530 Saint-Cézaire-sur-Siagne</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <small>Telephone</small>
+              <a href="tel:+33493608703">04 93 60 87 03</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <small>Horaires</small>
+              <p>Midi : 12h00 – 14h30<br>Fermé lundi & dimanche</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-credit-card"></i>
+            <div>
+              <small>Paiements</small>
+              <p>Carte bancaire, Cheques, Ticket Restaurant</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <small>Email</small>
+              <a href="mailto:restaurant@vignes-san-fariou.fr">restaurant@vignes-san-fariou.fr</a>
+            </div>
+          </div>
+          <div class="contact-item contact-social">
+            <i class="fab fa-facebook-f"></i>
+            <div>
+              <small>Suivez-nous</small>
+              <a href="https://www.facebook.com/VignesSanFariou" target="_blank" rel="noopener">Facebook</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map reveal reveal-right">
+          <iframe src="https://maps.google.com/maps?q=12+Place+G%C3%A9n%C3%A9ral+de+Gaulle,+06530+Saint-C%C3%A9zaire-sur-Siagne&t=m&z=16&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Carte Saint-Cézaire-sur-Siagne"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">Les Vignes <span>de Saint Farou</span></div>
+        <p>12 Place Général de Gaulle — 06530 Saint-Cézaire-sur-Siagne<br>04 93 60 87 03</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/VignesSanFariou" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+          <a href="mailto:restaurant@vignes-san-fariou.fr"><i class="fas fa-envelope"></i><span>Email</span></a>
+        </div>
+        <div class="footer-copy">© 2026 Les Vignes de Saint Farou</div>
+        <div class="footer-legal">
+          <a href="confidentialite.html">Politique de confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookieNotice" class="cookie-notice">
+    <div class="cookie-notice-inner">
+      <p><strong>Cookies</strong> — Ce site utilise des cookies pour améliorer votre expérience. Vous pouvez à tout moment personnaliser ou refuser leur utilisation.</p>
+      <div class="cookie-notice-actions">
+        <button id="cookieOk">Accepter</button>
+        <button id="cookieNope">Refuser</button>
+        <button id="cookieCustomize">Personnaliser</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookiePanel" class="cookie-panel">
+    <div class="cookie-panel-overlay"></div>
+    <div class="cookie-panel-inner">
+      <div class="cookie-panel-header">
+        <h3>Personnaliser les cookies</h3>
+        <button id="cookiePanelClose" class="cookie-panel-x">&times;</button>
+      </div>
+      <div class="cookie-panel-body">
+        <p class="cookie-panel-desc">
+          En activant ou désactivant les catégories ci-dessous, vous contrôlez les cookies que nous sommes susceptibles d'utiliser. Votre choix sera conservé pendant 12 mois.
+        </p>
+        <div class="cookie-group">
+          <div class="cookie-group-head">
+            <div>
+              <strong>Cookie de consentement (obligatoire)</strong>
+              <small>Nécessaire au bon fonctionnement du site — enregistre votre préférence de consentement</small>
+            </div>
+            <label class="toggle disabled">
+              <input type="checkbox" checked disabled>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="cookie-group">
+          <div class="cookie-group-head">
+            <div>
+              <strong>Google Maps</strong>
+              <small>Affiche la carte interactive de notre restaurant. Donnée hébergée par Google Ireland Ltd.</small>
+            </div>
+            <label class="toggle">
+              <input type="checkbox" id="mapsCheck" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="cookie-group">
+          <div class="cookie-group-head">
+            <div>
+              <strong>Facebook</strong>
+              <small>Permet le partage sur Facebook et l'affichage de notre page. Donnée hébergée par Meta Platforms Inc.</small>
+            </div>
+            <label class="toggle">
+              <input type="checkbox" id="fbCheck" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="cookie-group">
+          <div class="cookie-group-head">
+            <div>
+              <strong>Analytics</strong>
+              <small>Nous aide à comprendre comment vous utilisez le site pour l'améliorer. Données anonymisées.</small>
+            </div>
+            <label class="toggle">
+              <input type="checkbox" id="analyticsCheck">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="cookie-group">
+          <div class="cookie-group-head">
+            <div>
+              <strong>Polices & contenus externes (obligatoire)</strong>
+              <small>Google Fonts et autres ressources nécessaires à l'affichage du site</small>
+            </div>
+            <label class="toggle">
+              <input type="checkbox" id="fontsCheck" checked disabled>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="cookie-group">
+          <div class="cookie-group-head">
+            <div>
+              <strong>Réservation en ligne</strong>
+              <small>Session nécessaire pour le formulaire de réservation de table</small>
+            </div>
+            <label class="toggle">
+              <input type="checkbox" id="bookingCheck" checked disabled>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="cookie-group">
+          <div class="cookie-group-head">
+            <div>
+              <strong>Préférences d'affichage</strong>
+              <small>Mémorise vos préférences de langue et d'affichage</small>
+            </div>
+            <label class="toggle">
+              <input type="checkbox" id="prefsCheck" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="cookie-group">
+          <div class="cookie-group-head">
+            <div>
+              <strong>Sécurité & anti-spam</strong>
+              <small>Protège le site contre les accès frauduleux et les robots</small>
+            </div>
+            <label class="toggle">
+              <input type="checkbox" id="securityCheck" checked disabled>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="cookie-panel-footer">
+        <button id="panelAll" class="cookie-btn cookie-btn-primary">Tout accepter</button>
+        <button id="panelSave" class="cookie-btn cookie-btn-secondary">Confirmer</button>
+        <button id="panelNone" class="cookie-btn cookie-btn-ghost">Tout refuser</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
