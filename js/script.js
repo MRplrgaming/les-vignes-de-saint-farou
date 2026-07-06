@@ -261,16 +261,27 @@ function animateStars(from, to, duration) {
     submitBtn.textContent = 'Envoi en cours...';
 
     var data = new FormData(form);
-    data.append('_gotcha', '');
 
     fetch('https://formspree.io/f/xaqgvgzp', {
       method: 'POST',
       body: data,
       headers: { 'Accept': 'application/json' }
-    }).then(function() {
-      form.reset();
-      submitBtn.style.display = 'none';
-      success.classList.add('show');
+    }).then(function(r) {
+      if (r.redirected) {
+        form.reset();
+        submitBtn.style.display = 'none';
+        success.classList.add('show');
+      } else {
+        return r.json().then(function(j) {
+          if (j.ok) {
+            form.reset();
+            submitBtn.style.display = 'none';
+            success.classList.add('show');
+          } else {
+            throw new Error('Formspree error');
+          }
+        });
+      }
     }).catch(function() {
       submitBtn.disabled = false;
       submitBtn.textContent = 'Envoyer la demande';
