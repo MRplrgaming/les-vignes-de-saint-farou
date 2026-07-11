@@ -361,7 +361,7 @@ nav.scrolled {
 
 .hero-holder h1 {
   font-family: var(--font-serif);
-  font-size: 5.8rem;
+  font-size: clamp(2.4rem, 8vw, 5.8rem);
   font-weight: 400;
   line-height: 1;
   color: var(--ivory);
@@ -1651,4 +1651,9 @@ nav.scrolled {
   .chef-text h3 { font-size: 1.5rem; }
   .chef-text p { font-size: 0.85rem; }
   .chef-text p:last-child { padding: 16px; font-size: 0.85rem; }
+
+  .logo-img { height: 45px; }
+  .btn { font-size: 13px; padding: 12px 22px; }
+  .footer-grid h4 { font-size: 14px; }
+  .footer-grid p, .footer-grid a { font-size: 13px; }
 }
