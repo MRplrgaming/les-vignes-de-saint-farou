@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mrplrgaming.github.io/les-vignes-de-saint-farou/sitemap.xml
